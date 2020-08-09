@@ -12,7 +12,8 @@
   integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="Css/custom.css">
-
+<link rel="stylesheet" href="Css/style.css">
+          <link rel="stylesheet" href="Css/swiper.min.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <!-------Js Framworks--------->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -224,7 +225,92 @@
 
 
 <!-- About us ends -->
-
+  <!---speaker-info-begins-->
+  
+      <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"style="width:400px">
+         <div class="card">
+          <div class="sliderText">
+            <h3><img src="PUNEET-KUMAR-MISHRA.jpg" alt="Italian Trulli"width="400px"height="300px"></h3>
+            </div>
+          <div class="content">
+              <p>
+                   Speaker 1 and alll
+               </p>
+                 <a href="#">Read more</a>
+           </div>
+         </div>
+        </div>
+        <div class="swiper-slide"style="width:400px">
+         <div class="card">
+          <div class="sliderText">
+            <h3><img src="PUNEET-KUMAR-MISHRA.jpg" alt="Italian Trulli"width="400px"height="300px"></h3>
+            </div>
+          <div class="content">
+              <p>
+                   Speaker 1 and alll
+               </p>
+                 <a href="#">Read more</a>
+           </div>
+         </div>
+        </div>
+        <div class="swiper-slide"style="width:400px">
+         <div class="card">
+          <div class="sliderText">
+            <h3><img src="PUNEET-KUMAR-MISHRA.jpg" alt="Italian Trulli"width="400px"height="300px"></h3>
+            </div>
+          <div class="content">
+              <p>
+                   Speaker 1 and alll
+               </p>
+                 <a href="#">Read more</a>
+           </div>
+         </div>
+        </div>
+        <div class="swiper-slide"style="width:400px">
+         <div class="card">
+          <div class="sliderText">
+            <h3>Slide Four</h3>
+            </div>
+          <div class="content">
+              <p>
+                   Speaker 1 and alll
+               </p>
+                 <a href="#">Read more</a>
+           </div>
+         </div>
+        </div>
+        <div class="swiper-slide"style="width:400px">
+         <div class="card">
+          <div class="sliderText">
+            <h3>Slide Five</h3>
+            </div>
+          <div class="content">
+              <p>
+                   Speaker 1 and alll
+               </p>
+                 <a href="#">Read more</a>
+           </div>
+         </div>
+        </div>
+        <div class="swiper-slide"style="width:400px">
+         <div class="card">
+          <div class="sliderText">
+            <h3>Slide Six</h3>
+            </div>
+          <div class="content">
+              <p>
+                   Speaker 1 and alll
+               </p>
+                 <a href="#">Read more</a>
+           </div>
+         </div>
+        </div>
+      </div>
+  </div>
+  
+  <!---speaker-info-ends-->
   <!---Meet-The-Team Begins-->
 
   <div class="full-height" style="background-color: #193C79;">
@@ -321,7 +407,33 @@
 
 
   
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      loop: true,
 
+      centeredSlides: true,
+      slidesPerView: '3',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 100,
+        depth: 200,
+        modifier: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+         clickable: true,
+      },
+      navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+     },
+    });
+
+  </script>
   <script>
     $('.main-carousel').flickity({
       // options
